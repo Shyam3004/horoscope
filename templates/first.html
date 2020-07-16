@@ -1,0 +1,55 @@
+<html>
+
+<section id="header">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Daily Horoscope</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <h1 class="head">Know your today's Horoscope</h1>
+    </head>
+</section>
+
+<body>
+    <section id="main">
+        <div class="container-box">
+
+            <br>
+            <div class="box">
+                <form action="result" method="POST">
+                    <input type="text" name="name" class="form-control" size="20" placeholder="Name" required>
+                    <br> <br>
+                    <h3 class="name">Select Your <span class="blinking">sunsign.</span></h3><br />
+                    <select name="sunsign" required>
+                        <option value="" disabled selected hidden>Click Me . . </option>
+                        <option value="Aries">Aries</option>
+                        <option value="Taurus">Taurus</option>
+                        <option value="Gemini">Gemini</option>
+                        <option value="Cancer">Cancer</option>
+                        <option value="Leo">Leo</option>
+                        <option value="Virgo">Virgo</option>
+                        <option value="Libra">Libra</option>
+                        <option value="Scorpio">Scorpio</option>
+                        <option value="Sagittarius">Sagittarius</option>
+                        <option value="Capricorn">Capricorn</option>
+                        <option value="Aquarius ">Aquarius </option>
+                        <option value="Pisces">Pisces</option>
+                    </select><br> <br>
+                    <input type="submit" value="Submit" class="btn btn-danger">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <h4>&copy; SHYAM SUNDAR</h4>
+    </section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
