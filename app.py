@@ -28,3 +28,6 @@ def result():
     date_today = info['date']
     # print('your today horoscope : \n    ' + horoscope)
     return render_template('result.html', name=name, sunsign=sunsign, date_today=date_today, horoscope=horoscope)
+
+if __name__ == "__main__":
+    app.run()
